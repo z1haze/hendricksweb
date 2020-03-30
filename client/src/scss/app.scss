@@ -1,6 +1,75 @@
-img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -100%);
+@import 'variables';
+
+// libraries
+@import '~bootstrap/scss/bootstrap';
+@import '~ionicons/dist/css/ionicons';
+@import '~slick-carousel/slick/slick';
+
+// partials
+@import 'header';
+@import 'util';
+@import 'ui/elements';
+@import 'ui/masks';
+@import 'ui/bg';
+@import 'ui/dividers';
+@import 'ui/text_pop';
+
+body {
+  font-family: $opensans;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #535353;
+  background-color: #fbfbfb;
+}
+
+a {
+  text-decoration: none;
+  transition: color .25s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+#page-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.hero__inner {
+  display: flex;
+  padding-bottom: 60px;
+  width: 100%;
+  overflow: hidden;
+  min-height: 800px;
+
+  .container {
+    z-index: 1;
+  }
+}
+
+/**
+ * Clients section
+ */
+#clients {
+  background-color: #cd2222;
+
+  .section__title {
+    color: #fff;
+
+    &:after {
+      content: '';
+      width: 55px;
+      margin: 30px auto;
+      height: 2px;
+      background-color: #fff;
+      display: block;
+    }
+  }
 }

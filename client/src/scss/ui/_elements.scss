@@ -1,0 +1,74 @@
+/**
+ * Headings
+ */
+h1 {
+  font-family: $montserrat;
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: $montserrat;
+  font-size: 1.9rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3 {
+  font-family: $opensans;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h4 {
+  font-family: $opensans;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h5 {
+  font-family: $opensans;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h6 {
+  font-family: $opensans;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/**
+ * Lists
+ */
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Forms
+ */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+/**
+ * Dividers
+ */
+.h__separator {
+  margin: 15px 0;
+  border-top: 1px solid #e2e2e2;
+}

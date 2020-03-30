@@ -1,3 +1,117 @@
-<div class="container vh-100 position-relative">
-    <img src="/img/ohyea.png" alt="ohyea" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+<div id="page-wrapper">
+    {{> header }}
+
+    <section class="hero">
+        <div class="hero__inner">
+            <div class="abs-0">
+                <div class="bg-source">
+                    <div class="bg-source__image" style="background-image: url(/img/hero_sample.jpg); background-repeat: no-repeat; background-attachment: scroll; background-position-x: center; background-position-y: center; background-size: cover;">
+                    </div>
+
+                    <div class="bg-source__overlay" style="background: rgba(130,36,227,0.35); background: -moz-linear-gradient(left, rgba(130,36,227,0.35) 0%, rgba(53,53,53,0.55) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(130,36,227,0.35)), color-stop(100%,rgba(53,53,53,0.55))); background: -webkit-linear-gradient(left, rgba(130,36,227,0.35) 0%,rgba(53,53,53,0.55) 100%); background: -o-linear-gradient(left, rgba(130,36,227,0.35) 0%,rgba(53,53,53,0.55) 100%); background: -ms-linear-gradient(left, rgba(130,36,227,0.35) 0%,rgba(53,53,53,0.55) 100%); background: linear-gradient(to right, rgba(130,36,227,0.35) 0%,rgba(53,53,53,0.55) 100%); ">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container align-self-center">
+                <div>
+                    <div class="text-pop-line text-pop-line--line1 text-uppercase">Hey There!</div>
+                    <div class="text-pop-line text-pop-line--line2 text-uppercase">I'm Stephen</div>
+                    <div class="text-pop-line text-pop-line--line3 text-uppercase">An experienced / professional / proven</div>
+                    <div class="text-pop-line text-pop-line--line4 text-uppercase">Web developer</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-mask bottom-mask--mask5">
+            <svg width="2700px" height="64px" class="svg-mask" viewBox="0 0 2700 64" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
+                <defs>
+                    <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-mask5">
+                        <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+                        <feGaussianBlur stdDeviation="1.5" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+                        <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+                        <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.45 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+                        <feMerge>
+                            <feMergeNode in="SourceGraphic"></feMergeNode>
+                            <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path d="M1892,0 L2119,44.993 L2701,45 L2701.133,63.993 L-0.16,63.993 L1.73847048e-12,45 L909,44.993 L1892,0 Z" class="bmask-bgfill" fill="#ffffff" filter="url(#filter-mask5)"></path>
+                <path d="M2216,44.993 L2093,55 L1882,6 L995,62 L966,42 L1892,0 L2118,44.993 L2216,44.993 L2216,44.993 Z" fill="#cd2122" class="bmask-customfill" filter="url(#filter-mask5)"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section id="about" class="py-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="section__title fw-700 text-uppercase fs-xl alt-font">Who am I?</h3>
+
+                    <h4 class="section__subtitle fs-s fw-vthin pb-20">
+                        I am a professional software engineer who specializes in designing and implementing moderate to large scale e-commerce websites on the Salesforce Commerce Cloud platform.
+                        Having worked with a wide variety of companies, some very small, and some being the biggest in the business, has helped me groom my techniques to be able to mold into any type
+                        of development ecosystem. I truly enjoy what I do, and being able love what I do, day in and day out, really helps me to thrive in my work. I am consistently up for new challenges and
+                        I will always put my best foot forward, no matter size of the project. Working with me, you can be rest assured that your best intentions are also my own, because I want to be a part of your team.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="py-80 position-relative">
+        <div class="bg-source">
+            <div class="bg-source__overlay" style="background: rgba(205,33,34,1); background: -moz-linear-gradient(left, rgba(205,33,34,1) 0%, rgba(245,72,76,1) 100%); background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(205,33,34,1)), color-stop(100%,rgba(245,72,76,1))); background: -webkit-linear-gradient(left, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); background: -o-linear-gradient(left, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); background: -ms-linear-gradient(left, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); background: linear-gradient(to right, rgba(205,33,34,1) 0%,rgba(245,72,76,1) 100%); "></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="section__title fw-700 text-uppercase fs-l alt-font text-center pb-25">Companies I've worked with</h3>
+
+                    <div class="carousel-wrapper">
+                        <div class="clients-carousel">
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+
+                            <div>
+                                <img src="https://via.placeholder.com/200x100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="process" class="py-80">
+
+    </section>
 </div>

@@ -17,6 +17,9 @@ function getPlugins (mode) {
         new CopyPlugin([{
             from: __dirname + '/client/src/img',
             to  : __dirname + '/client/dist/img',
+        }, {
+            from: __dirname + '/node_modules/ionicons/dist/fonts',
+            to  : __dirname + '/client/dist/fonts'
         }], {
             copyUnmodified: true
         }),
@@ -38,8 +41,7 @@ function getPlugins (mode) {
 module.exports = (mode, argv) => {
     const config = {
         entry: {
-            app   : [__dirname + '/client/src/js/app.js', __dirname + '/client/src/scss/app.scss'],
-            vendor: __dirname + '/client/src/scss/vendor.scss'
+            app: [__dirname + '/client/src/js/app.js', __dirname + '/client/src/scss/app.scss']
         },
         output: {
             filename: 'js/[name].js',
@@ -51,8 +53,8 @@ module.exports = (mode, argv) => {
                     test: /\.scss$/,
                     use : [
                         MiniCssExtractPlugin.loader,
-                        { loader: 'css-loader', options: { url: false, sourceMap: mode === 'development' } },
-                        { loader: 'sass-loader', options: { sourceMap: mode === 'development' } }
+                        { loader: 'css-loader', options: { url: false, sourceMap: argv.mode === 'development' } },
+                        { loader: 'sass-loader', options: { sourceMap: argv.mode === 'development' } }
                     ]
                 },
                 {

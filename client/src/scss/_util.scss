@@ -1,0 +1,151 @@
+.abs-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+/*
+ * Padding Helpers
+ */
+$helper-p: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100;
+@each $item in $helper-p {
+  // all padding
+  .p-#{$item} {
+    padding: #{$item}px !important;
+  }
+
+  // top padding
+  .pt-#{$item} {
+    padding-top: #{$item}px !important;
+  }
+
+  // left padding
+  .pl-#{$item} {
+    padding-left: #{$item}px !important;
+  }
+
+  // right padding
+  .pr-#{$item} {
+    padding-right: #{$item}px !important;
+  }
+
+  // bottom padding
+  .pb-#{$item} {
+    padding-bottom: #{$item}px !important;
+  }
+
+  // x padding
+  .px-#{$item} {
+    padding-left: #{$item}px !important;
+    padding-right: #{$item}px !important;
+  }
+
+  // y padding
+  .py-#{$item} {
+    padding-top: #{$item}px !important;
+    padding-bottom: #{$item}px !important;
+  }
+}
+
+/*
+ * Font Weight Helpers
+ */
+$helper-fw: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+@each $item in $helper-fw {
+  .fw-#{$item} {
+    font-weight: #{$item} !important;
+  }
+}
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fw-normal {
+  font-weight: 400;
+}
+
+.fw-vthin {
+  font-weight: 100;
+}
+
+/*
+ * Font Size Helpers
+ */
+.fs-smaller {
+  font-size: 0.6rem;
+  line-height: 1.6;
+}
+
+.fs-small {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.fs-xn {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.fs-normal {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.fs-s {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.fs-m {
+  font-size: 1.4rem;
+  line-height: 1.4;
+}
+
+.fs-l {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.fs-xl {
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+
+.fs-xxl {
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+.fs-larger {
+  font-size: 2.6rem;
+  line-height: 1.3;
+}
+
+.fs-xxxl {
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+.fs-xxxxl {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+.fs-jumbo {
+  font-size: 5rem;
+  line-height: 1.4;
+}
+
+.fs-crazy {
+  font-size: 12rem;
+}
+
+/*
+ * Font Family Helpers
+ */
+.alt-font {
+  font-family: $montserrat;
+}

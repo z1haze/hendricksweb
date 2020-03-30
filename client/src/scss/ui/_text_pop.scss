@@ -1,0 +1,42 @@
+.text-pop-line {
+  color: #eee;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 7px 0;
+  cursor: default;
+  position: relative;
+  transform-origin: center bottom;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    color: #fff;
+    text-shadow: 0 4px 1px rgba(0, 0, 0, 0.6);
+    transform: scale(1.15);
+  }
+
+  &--line1 {
+    font-size: 20px;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+  }
+
+  &--line2 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+  }
+
+  &--line3 {
+    font-size: 32px;
+  }
+
+  &--line4 {
+    font-size: 30px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    margin-top: 5px;
+  }
+}
