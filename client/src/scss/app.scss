@@ -72,4 +72,62 @@ a {
       display: block;
     }
   }
+
+  .clients-carousel {
+    &__carousel-item {
+      float: left;
+      height: 80px;
+      line-height: 60px;
+      vertical-align: middle;
+      text-align: center;
+
+      img {
+        max-height: 80px;
+        margin: 0 auto;
+        width: auto;
+      }
+    }
+
+    &.slick-initialized {
+      img {
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.3s ease 0s, transform 0.2s ease 0s, -webkit-transform 0.2s ease 0s;
+      }
+    }
+
+    &.slick--activated {
+      .slick-active {
+        img {
+          transform: translateY(0);
+          opacity: 1;
+          transition: opacity 0.6s ease 0.1s, transform 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+        }
+
+        ~ .slick-active {
+          img {
+            transition-delay: 0.2s, 0.1s;
+          }
+
+          ~ .slick-active {
+            img {
+              transition-delay: 0.3s, 0.2s;
+            }
+
+            ~ .slick-active {
+              img {
+                transition-delay: 0.4s, 0.3s;
+              }
+
+              ~ .slick-active {
+                img {
+                  transition-delay: 0.5s, 0.4s;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
