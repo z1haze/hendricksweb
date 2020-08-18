@@ -14,14 +14,17 @@ function getPlugins (mode) {
             jQuery: 'jquery'
         }),
         new CleanWebpackPlugin({verbose: true}),
-        new CopyPlugin([{
-            from: __dirname + '/client/src/img',
-            to  : __dirname + '/client/dist/img',
-        }, {
-            from: __dirname + '/node_modules/ionicons/dist/fonts',
-            to  : __dirname + '/client/dist/fonts'
-        }], {
-            copyUnmodified: true
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: __dirname + '/client/src/img',
+                    to  : __dirname + '/client/dist/img'
+                },
+                {
+                    from: __dirname + '/node_modules/ionicons/dist/fonts',
+                    to  : __dirname + '/client/dist/fonts'
+                }
+            ]
         }),
         new MiniCssExtractPlugin({
             filename: 'css/[name].css'
