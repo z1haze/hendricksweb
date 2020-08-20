@@ -21,6 +21,10 @@ function getPlugins (mode) {
                     to  : __dirname + '/client/dist/img'
                 },
                 {
+                    from: __dirname + '/client/src/svg',
+                    to  : __dirname + '/client/dist/svg'
+                },
+                {
                     from: __dirname + '/node_modules/ionicons/dist/fonts',
                     to  : __dirname + '/client/dist/fonts'
                 }
